@@ -1,0 +1,29 @@
+.footer {
+  background-color: #0b0b0b;
+  color: #ddd6d6;
+  text-align: center;
+  padding: 0.20rem 0;
+  position: fixed; /* or remove if you want footer at bottom of page */
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  z-index: 1000;
+}
+
+.social-links {
+  margin-top: 0.25rem;
+}
+
+.social-links a {
+  color: #ddd6d6;
+  margin: 0 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #edece7;
+  cursor: pointer;
+}

@@ -1,0 +1,92 @@
+/* Hamburger menu button */
+.menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: rgb(14, 13, 13);
+  padding: 10px;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #222;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.sidebar nav a:hover {
+  color: #ffdf6c;
+}
+
+/* Dark Mode Button */
+.dark-mode-toggle {
+  margin-top: 0px;
+  padding: 10px;
+  text-align: start;
+}
+
+.dark-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dark-btn.active {
+  background-color: #ffdf6c;
+  color: black;
+}
+
+.dark-btn:hover {
+  background-color: #666;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: #121212;
+  color: white;
+}

@@ -1,0 +1,98 @@
+
+
+.projects-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f7e1d7 0%, #ffd633 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 214, 51, 0.3);
+}
+
+
+
+.projects-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #f7e1d7;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.project-tech {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.project-card p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.project-links {
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0b0b0b;
+  color: #ddd6d6;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffd633;
+  color: #0b0b0b;
+}
+
+.btn-secondary {
+  background-color: #555;
+}
+
+.btn-secondary:hover {
+  background-color: #ffb700;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 600px) {
+  .projects-container {
+    padding: 1rem;
+  }
+  .projects-container h1 {
+    font-size: 2rem;
+  }
+}

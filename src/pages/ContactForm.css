@@ -1,0 +1,83 @@
+/* Container */
+.contact-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: #f7e1d7;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* Heading */
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-size: 2rem;
+}
+
+/* Success message */
+.success-message {
+  color: rgb(9, 9, 9);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Labels */
+.contact-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Inputs and textarea */
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.contact-container input[type="text"]:focus,
+.contact-container input[type="email"]:focus,
+.contact-container textarea:focus {
+  border-color: #ffd633;
+  outline: none;
+}
+
+/* Submit button */
+.contact-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b0b0b;
+  color: #ddd6d6;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+  background-color: #ffd633;
+  color: #0b0b0b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .contact-container {
+    margin: 2rem 1rem;
+    padding: 1rem 1rem;
+  }
+}
